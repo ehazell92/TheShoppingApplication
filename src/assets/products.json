@@ -1,0 +1,42 @@
+{
+    "products" : [
+        {
+            "1" : {
+                "description" : "basic description here",
+                "price" : 2.50,
+                "category" : "Candy",
+                "image" : "/fakeURL/image.png"
+            },
+            "2": {
+                "description": "basic description here",
+                "price": 2.50,
+                "category": "Candy",
+                "image": "/fakeURL/image.png"
+            },
+            "3": {
+                "description": "basic description here",
+                "price": 2.50,
+                "category": "Candy",
+                "image": "/fakeURL/image.png"
+            },
+            "4": {
+                "description": "basic description here",
+                "price": 2.50,
+                "category": "Candy",
+                "image": "/fakeURL/image.png"
+            },
+            "5": {
+                "description": "basic description here",
+                "price": 2.50,
+                "category": "Candy",
+                "image": "/fakeURL/image.png"
+            },
+            "6": {
+                "description": "basic description here",
+                "price": 2.50,
+                "category": "Candy",
+                "image": "/fakeURL/image.png"
+            }
+        }
+    ] 
+}
