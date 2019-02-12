@@ -1,0 +1,14 @@
+:host { 
+    padding: 1%;
+}
+.prodMain {
+    border-radius: 5%;
+    box-shadow: 1px 1px 10px white;
+}
+.prodDetails {
+    text-align: left;
+    display: inline-grid;
+}
+img {
+    width: 60%;
+}

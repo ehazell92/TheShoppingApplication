@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-menu-bar',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuBarComponent implements OnInit {
 
+  @Input() prodList: any;
+  prods: any;
   constructor() { }
 
   ngOnInit() {
+    this.prods = ['test1', 'test2', 'test3'];
   }
 
 }

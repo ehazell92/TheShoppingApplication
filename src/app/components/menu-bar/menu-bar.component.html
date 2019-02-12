@@ -1,3 +1,10 @@
-<p>
-  menu-bar works!
-</p>
+<mat-form-field>
+  <input matInput placeholder="Search for Product" >
+</mat-form-field>
+<mat-form-field>
+    <mat-select placeholder="Filter Products By">
+      <mat-option *ngFor="let prod of prods" [value]="prod">
+        {{prod}}
+      </mat-option>
+    </mat-select>
+</mat-form-field>
