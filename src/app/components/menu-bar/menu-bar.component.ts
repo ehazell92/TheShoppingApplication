@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class MenuBarComponent implements OnInit {
 
-  @Input() prodList: any;
+  @Input() prodsList: any;
   prods: any;
   constructor() { }
 

@@ -1,10 +1,8 @@
 <div class="hostDiv">
-  <app-menu-bar [prodList]="productList" ></app-menu-bar>
-  <div class="mainContainer">
+  <app-menu-bar [prodsList]="productsList" ></app-menu-bar>
+  <div *ngIf="productsList" class="mainContainer" >
     <div class="prodContainer">
-      <app-product></app-product>
-      <app-product></app-product>
-      <app-product></app-product>
+      <app-product ></app-product>
     </div>
     <div class="cartContainer">
       <app-shopping-cart></app-shopping-cart>
