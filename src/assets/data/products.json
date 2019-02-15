@@ -2,42 +2,42 @@
     "products" : [
         {
             "1" : {
-                "productName": "Snickers",
+                "name": "Snickers",
                 "description" : "basic description here",
                 "price" : 2.50,
                 "category" : "Candy",
                 "image" : "/images/ph.jpg"
             },
             "2": {
-                "productName": "Milky Way",
+                "name": "Milky Way",
                 "description": "basic description here",
                 "price": 2.50,
                 "category": "Candy",
                 "image": "/images/ph.jpg"
             },
             "3": {
-                "productName": "3 Muskateers",
+                "name": "3 Muskateers",
                 "description": "basic description here",
                 "price": 2.50,
                 "category": "Candy",
                 "image": "/images/ph.jpg"
             },
             "4": {
-                "productName": "Laffy Taffy",
+                "name": "Laffy Taffy",
                 "description": "basic description here",
                 "price": 2.50,
                 "category": "Candy",
                 "image": "/images/ph.jpg"
             },
             "5": {
-                "productName": "Twizzlers",
+                "name": "Twizzlers",
                 "description": "basic description here",
                 "price": 2.50,
                 "category": "Candy",
                 "image": "/images/ph.jpg"
             },
             "6": {
-                "productName": "Nerds Rope",
+                "name": "Nerds Rope",
                 "description": "basic description here",
                 "price": 2.50,
                 "category": "Candy",

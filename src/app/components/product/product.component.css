@@ -1,5 +1,6 @@
 :host { 
     padding: 1%;
+    max-width: 33%;
 }
 .prodMain {
     border-radius: 5%;

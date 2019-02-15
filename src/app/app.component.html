@@ -1,11 +1,15 @@
-<div class="hostDiv">
-  <app-menu-bar [prodsList]="productsList" ></app-menu-bar>
-  <div *ngIf="productsList" class="mainContainer" >
-    <div class="prodContainer">
-      <app-product ></app-product>
+<div class="hostDiv" *ngIf="productsList?.length>0" >
+  <app-menu-bar ></app-menu-bar>
+  <div class="mainContainer" >
+    <div class="prodContainer" >
+      <app-product *ngFor="let product of productsList" [prod]="product" ></app-product>
     </div>
     <div class="cartContainer">
       <app-shopping-cart></app-shopping-cart>
     </div>    
   </div>
+</div>
+<div *ngIf="!productsList">
+  <h1>No Products Found!</h1>
+  <h2>::{{productsList}}::</h2>
 </div>

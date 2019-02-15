@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { GetProductListService } from '../app/services/get-product-list.service';
-import { Observable } from 'rxjs';
+import { IProduct } from '../app/models/IProduct';
+import { Subscription } from 'rxjs';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +10,8 @@ import { Observable } from 'rxjs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  productsList: any;
+  productsList: IProduct[];
+  sub: Subscription;
   title = 'TheShoppingCart';
 
   constructor(private productService: GetProductListService) { }
@@ -19,9 +22,23 @@ export class AppComponent {
   }
 
   getProds() {
-    this.productService.getProds().subscribe(data => {
-      // console.log(data);
-      this.productsList = data;
-    });
+    // this.productService.getProds().subscribe(data => {
+    //   this.productsList = data;
+    //   this.products = data;
+    // });
+    // this.sub = this.productService.productListChanges$.subscribe(
+    //   response => this.productsList = response,
+    //   error => console.log('product fetch error')
+    // );
+    this.productService.getProds().subscribe(
+        response => this.productsList = response,
+        error => console.log('product fetch error')
+    );
+
+    // POSSIBLE solution??
+    // .subscribe((response: any) => {
+    //   this.categories = <CategoryInterface[]>response.categories;
+    //   console.log(this.categories);
+    // });
   }
 }
