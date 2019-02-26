@@ -1,15 +1,20 @@
-:host { 
-    padding: 1%;
-    max-width: 33%;
-}
+:host { /* padding: 1%; */ }
 .prodMain {
+    display: inline-block;
     border-radius: 5%;
     box-shadow: 1px 1px 10px white;
+    max-width: 30%;
+    min-width: 30%;
+    margin: 1.5%;
 }
+    .prodMain:hover {
+        box-shadow: 1px 1px 5px black;
+    }
 .prodDetails {
     text-align: left;
     display: inline-grid;
 }
 img {
     width: 60%;
+    margin: 2%;
 }

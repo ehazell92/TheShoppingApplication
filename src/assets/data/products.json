@@ -1,48 +1,44 @@
-{
-    "products" : [
-        {
-            "1" : {
-                "name": "Snickers",
-                "description" : "basic description here",
-                "price" : 2.50,
-                "category" : "Candy",
-                "image" : "/images/ph.jpg"
-            },
-            "2": {
-                "name": "Milky Way",
-                "description": "basic description here",
-                "price": 2.50,
-                "category": "Candy",
-                "image": "/images/ph.jpg"
-            },
-            "3": {
-                "name": "3 Muskateers",
-                "description": "basic description here",
-                "price": 2.50,
-                "category": "Candy",
-                "image": "/images/ph.jpg"
-            },
-            "4": {
-                "name": "Laffy Taffy",
-                "description": "basic description here",
-                "price": 2.50,
-                "category": "Candy",
-                "image": "/images/ph.jpg"
-            },
-            "5": {
-                "name": "Twizzlers",
-                "description": "basic description here",
-                "price": 2.50,
-                "category": "Candy",
-                "image": "/images/ph.jpg"
-            },
-            "6": {
-                "name": "Nerds Rope",
-                "description": "basic description here",
-                "price": 2.50,
-                "category": "Candy",
-                "image": "/images/ph.jpg"
-            }
-        }
-    ] 
-}
+[
+    {
+        "name": "Snickers",
+        "description" : "basic description here",
+        "price" : 2.50,
+        "category" : "Candy",
+        "image" : "/images/ph.jpg"
+    },
+    {
+        "name": "Milky Way",
+        "description": "basic description here",
+        "price": 2.50,
+        "category": "Candy",
+        "image": "/images/ph.jpg"
+    },
+    {
+        "name": "3 Muskateers",
+        "description": "basic description here",
+        "price": 2.50,
+        "category": "Candy",
+        "image": "/images/ph.jpg"
+    },
+    {
+        "name": "Laffy Taffy",
+        "description": "basic description here",
+        "price": 2.50,
+        "category": "Candy",
+        "image": "/images/ph.jpg"
+    },
+    {
+        "name": "Twizzlers",
+        "description": "basic description here",
+        "price": 2.50,
+        "category": "Candy",
+        "image": "/images/ph.jpg"
+    },
+    {
+        "name": "Nerds Rope",
+        "description": "basic description here",
+        "price": 2.50,
+        "category": "Candy",
+        "image": "/images/ph.jpg"
+    }
+]
