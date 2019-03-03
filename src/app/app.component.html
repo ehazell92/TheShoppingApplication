@@ -1,15 +1,15 @@
-<div class="hostDiv" *ngIf="productsList?.length>0" >
-  <app-menu-bar ></app-menu-bar>
-  <div class="mainContainer" >
+<div class="hostDiv" >
+  <h1 class="hTitle">The Shopping Application!</h1>
+  <app-menu-bar (inputChange)="filterProductList($event)" [prods]="productsList" ></app-menu-bar>
+  <div class="mainContainer" *ngIf="productsList?.length>0" >
     <div class="prodContainer" >
-      <app-product *ngFor="let product of productsList" [prod]="product" ></app-product>
+      <app-product *ngFor="let product of productsList" [prod]="product" (selProduct)="updateCart($event)" ></app-product>
     </div>
-    <div class="cartContainer">
-      <app-shopping-cart></app-shopping-cart>
+    <div class="cartContainer" *ngIf="myCart?.length>0">
+      <app-shopping-cart [myCart]="myCart" [cartTotal]="cartTotal" (cartCalc)="updateTotal($event)" ></app-shopping-cart>
     </div>    
   </div>
-</div>
-<div *ngIf="!productsList">
-  <h1>Products are loading...</h1>
-  <h2>{{productsList}}</h2>
+  <div *ngIf="productsList?.length<1">
+    <h1>No matching results...</h1>
+  </div>
 </div>

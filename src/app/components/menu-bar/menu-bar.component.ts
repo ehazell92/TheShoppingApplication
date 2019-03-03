@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-menu-bar',
@@ -7,12 +7,18 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class MenuBarComponent implements OnInit {
 
-  @Input() prodsList: any;
-  prods: any;
+  @Input() prods: any;
+  @ViewChild('categoryFilter') categoryFilter;
+  @Output() inputChange = new EventEmitter();
   constructor() { }
 
   ngOnInit() {
-    this.prods = ['test1', 'test2', 'test3'];
   }
 
+  filterI(event: any) {
+    if (event.keyCode === 8) {
+      event.target.value = '';
+    }
+    this.inputChange.emit(event);
+  }
 }

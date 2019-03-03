@@ -1,2 +1,67 @@
 :host {
 }
+.cart {
+    position: relative;
+    width: 100%;
+    background-color: rgba(96, 125, 139, .4);
+}
+    .cartTitle {
+        position: relative;
+        width: 100%;
+        display: flex;
+        margin-top: 8%;
+        margin-bottom: 2%;
+        background-color: rgba(96, 125, 139, .9);
+        color:white;
+    }
+    .cartProd {
+        position: relative;
+        width: 100%;
+        display: flex;
+        background-color: rgba(96, 125, 139, .7);
+        overflow: hidden;
+    }
+    .cartProd:hover {
+        background-color: rgba(96, 125, 139, .9);
+        text-shadow: 1px 1px black;
+    }
+        .cartProd div, .cartTitle div {
+            position: relative;
+        }
+        .cartTitle div {
+            font-weight: bold;
+            font-size: 140%;
+        }
+        .cartProd div {            
+            color: white;
+        }
+        .cartProd :nth-child(1), .cartTitle :nth-child(1) {
+            width: 45%;
+            max-width: 45%
+        }
+        .cartProd div:not(:first-child), .cartTitle div:not(:first-child) {
+            width: 18%;
+            max-width: 18%
+        }
+        .cartProd div:not(:last-child), .cartTitle div:not(:last-child) {
+            padding-top: 2%;
+        }
+        .cartProd img {
+            position: relative;            
+            max-width: 40%;
+            cursor: pointer;
+        }
+        .cartProd img:hover {
+            transform: scale(1.1);
+        }
+
+.cartTotal {
+    position: absolute;
+    bottom: 3%;
+    right: 1%;
+    font-weight: bold;
+    font-size: 150%;
+    background-color: rgba(96, 125, 139, .9);
+    color: white;
+    padding: .6%;
+}

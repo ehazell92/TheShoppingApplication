@@ -1,44 +1,50 @@
 [
     {
+        "prodID": 1,
         "name": "Snickers",
-        "description" : "basic description here",
-        "price" : 2.50,
-        "category" : "Candy",
-        "image" : "/images/ph.jpg"
+        "description" : "Consisting of nougat topped with caramel and peanuts that has been enrobed in milk chocolate.",
+        "price" : 0.89,
+        "category" : "Bar",
+        "image" : "http://localhost:4200/assets/images/snickers.jpg"
     },
     {
+        "prodID": 2,
         "name": "Milky Way",
-        "description": "basic description here",
-        "price": 2.50,
-        "category": "Candy",
-        "image": "/images/ph.jpg"
+        "description": "Made of caramel and covered with milk chocolate, similar to the Mars bar sold outside of the U.S.",
+        "price": 1.39,
+        "category": "Bar",
+        "image": "http://localhost:4200/assets/images/milkyway.jpg"
     },
     {
-        "name": "3 Muskateers",
-        "description": "basic description here",
-        "price": 2.50,
-        "category": "Candy",
-        "image": "/images/ph.jpg"
+        "prodID": 3,
+        "name": "3 Musketeers",
+        "description": "Candy bar consisting of chocolate-covered, fluffy, whipped nougat, you wont put down!",
+        "price": 0.89,
+        "category": "Bar",
+        "image": "http://localhost:4200/assets/images/3musketeers.jpg"
     },
     {
+        "prodID": 4,
         "name": "Laffy Taffy",
-        "description": "basic description here",
-        "price": 2.50,
-        "category": "Candy",
-        "image": "/images/ph.jpg"
+        "description": "Brand of taffy manufactured by Nestlé and was sold under their Willy Wonka Candy Company brand.",
+        "price": 0.45,
+        "category": "Taffy",
+        "image": "http://localhost:4200/assets/images/laffytaffy.jpg"
     },
     {
+        "prodID": 5,
         "name": "Twizzlers",
-        "description": "basic description here",
-        "price": 2.50,
-        "category": "Candy",
-        "image": "/images/ph.jpg"
+        "description": "Just don’t forget to keep a bag of these chewy, long-lasting treats on hand for movie time!",
+        "price": 1.39,
+        "category": "Liquorice",
+        "image": "http://localhost:4200/assets/images/twizzlers.jpg"
     },
     {
+        "prodID": 6,
         "name": "Nerds Rope",
-        "description": "basic description here",
-        "price": 2.50,
-        "category": "Candy",
-        "image": "/images/ph.jpg"
+        "description": "Chewy and stretchy, this red, tangy taffy, individually wrapped long pieces of taffy are perfect for eating!",
+        "price": 1.01,
+        "category": "Liquorice",
+        "image": "http://localhost:4200/assets/images/nerdsrope.jpg"
     }
 ]

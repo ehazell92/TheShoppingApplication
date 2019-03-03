@@ -1,15 +1,18 @@
 <div class="prodMain">
   <div class="prodImage">
-    <img src="../../assets/images/ph.jpg" alt="product image tag" >
+    <img src="{{prod.image}}" alt="product image tag" >
   </div>
   <div class="prodDetails">
-    <span>
-      Product Title
+    <span class="productName">
+      {{prod.name}}
     </span>
-    <span>
-      Here is a default product description
+    <span class="productDescription">
+      {{prod.description}}
     </span>
-    <span>
-      $12.99
+    <span class="productPrice">
+      ${{prod.price}}
     </span>
+    <div id="{{prod.prodID}}" class="addToCart" (click)="addToCart(this)">
+      <span>Add To Cart</span>
+    </div>
 </div>

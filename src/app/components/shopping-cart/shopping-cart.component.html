@@ -1,3 +1,27 @@
-<p>
-  shopping-cart works!
-</p>
+<div class="cart">
+  <div class="cartTitle">
+      <div>Name</div>
+      <div>Qty</div>
+      <div>Cost</div>
+      <div></div>
+  </div>
+  <div class="cartProd" *ngFor="let prod of myCart">
+      <div>
+        {{prod.name}}
+      </div>
+      <div>
+        {{prod.quantity}}
+      </div>
+      <div>
+        {{prod.price}}
+      </div>
+      <div>
+        <img src="../../../assets/images/minus.png" alt="remove from cart" (click)="decCart(prod.name)">
+      </div>
+  </div>
+</div>
+<div class="cartTotal">
+  <div>
+    Cart Total:  ${{cartTotal}}
+  </div>
+</div>
